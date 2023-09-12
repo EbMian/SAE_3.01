@@ -1,0 +1,183 @@
+@font-face {
+  font-family: font1;
+  src: url(font/TT_Firs_Neue_Trial_Black.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(font/TT_Firs_Neue_Trial_Medium.ttf);
+}
+
+.logo-menu{
+  margin: 1%;
+}
+
+.logo{
+  margin-top: 0%;
+  position: absolute;
+}
+
+#logo-fcnevers{
+  height: 100px;
+  width: 80px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  
+  font-family: font1;
+  background-color: #DDD;
+}
+
+.menu {
+  margin-left:5%;
+  border-bottom: 1px solid #BBBBBB;
+  z-index: 0;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2300cc;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #2300cc;
+}
+
+.nav-link-fade-up::before {
+  width: 100%;
+  bottom: 5px;
+  opacity: 0;
+}
+
+.nav-link-fade-up:hover::before {
+  bottom: 10px;
+  opacity: 1;
+}
+
+#container {
+  display:block;
+  text-align: center;
+  justify-content: center;
+}
+
+
+#body2 {
+  background-color: #DDD;
+
+}
+
+.fit-content {
+  margin: 40%;
+  margin-top: 15%;
+  margin-bottom: 1%;
+  background-color: #2300cc;
+  border: 20px solid #2300cc;
+  border-radius: 30px 30px 0px 0px;
+
+
+}
+
+#button {
+  margin: 40%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: flex;
+  flex-direction: row;
+  background-color: #2300cc;
+  border: 20px solid #2300cc;
+  border-radius: 0px 0px 30px 30px;
+  justify-content: center;
+}
+
+#submit:hover, #button2:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input#submit{
+  background-color: mediumslateblue;
+  font-family: font2;
+  color:#2300cc;
+  border: 0.1rem solid yellow;
+  width: 100%;
+
+}
+
+#button2{
+  background-color: mediumslateblue;
+  font-family: font2;
+  color:#2300cc;
+  border: 0.1rem solid yellow;
+  width: 100%;
+}
+
+#submit2{
+  background-color: mediumslateblue;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 0.1rem solid yellow;
+  font-family: font2;
+  color:#2300cc;
+}
+
+
+.input {
+  display: block;
+}
+
+h1{
+ font-family: font1;
+ font-size: xx-large;
+ font-style: oblique;
+ text-align: center;
+ color:#2300cc;
+}
+
+h2{
+  font-family: font1;
+  font-style: oblique;
+  text-align: center;
+  color:yellow;
+}
+
+
+input[class=champs] {
+  border: none;
+  border-bottom: 2px solid yellow;
+  background-color:mediumslateblue;
+  font-family: font2;
+  margin-bottom: 2%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2300cc;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #2300cc;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #2300cc;
+}
+
+
+  
